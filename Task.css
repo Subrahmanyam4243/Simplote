@@ -1,0 +1,218 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+  }
+  navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7070ff;
+    padding: 15px;
+    gap: 70px;
+    white-space: nowrap;
+    position: sticky;
+    top: 0px;
+
+  }
+  a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #navlinks{
+    display: flex;
+    gap: 70px;
+  }
+  #dropdown {
+    flex-direction: column;
+    gap: 7px;
+    background-color: #ff7070ff;
+    position: absolute;
+    top: 35px;
+    right: 5%;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  #menubar {
+    width: 25px;
+  }
+
+  #main {
+    display: flex;
+    height: 600px;
+    background-image: linear-gradient(to right, #fff7adff, #ffb5eeff);
+  }
+  #mainhead{
+    font-size: 4vw;
+  }
+  #fooddiv {
+    width: 50%;
+    overflow: hidden;
+
+  }
+  #food {
+    width: 100%;
+    height: 100%;
+
+  }
+  #heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  #sublayer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: space-between;
+  }
+  #btn1 {
+    padding: 10px;
+    width: 40%;
+    background-color: #ff7070ff;
+    border: none;
+    color: white;
+    margin-top: 30px;
+  }
+  #main2 {
+    height: 600px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-image: linear-gradient(to right, #fff7adff, #ffb5eeff);
+  }
+  #gallery {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    gap: 10px;
+  }
+  .img1 {
+    grid-area: "stag";
+    width: 100%;
+    height: 100%;
+  }
+  .img2 {
+    grid-area: "street";
+    width: 100%;
+    height: 100%;
+  }
+  .img3 {
+    grid-area: "table";
+    width: 100%;
+    height: 100%;
+  }
+  #btn2 {
+    width: 30%;
+    height: fit-content;
+    background-color: #ff7070ff;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  #btn2head {
+    line-height: 10px;
+    font-size: 2vw;
+    letter-spacing: 3px;
+  }
+  @media all and (min-width: 500px) and (max-width: 900px) {
+    #main {
+      height: 400px;
+    }
+    #main2 {
+      height: 400px;
+    }
+    #sublayer {
+      width: 90%;
+    }
+     #navlinks{
+      display: none;
+     }
+     #drophead:hover #dropdown {
+    display: flex;
+    font-size: 10px;
+  }
+  navbar{
+    justify-content: flex-end;
+    padding: 10px;
+    
+  }
+  p{
+    line-height: 3vh;
+  }
+  #btn1{
+    margin-top: 10px;
+  }
+  #mainhead{
+    font-size: 5vw;
+  }
+  #maintext{
+    line-height: 3vh;
+  }
+  }
+  @media all and (max-width: 500px) {
+    #main {
+      flex-direction: column;
+      height: fit-content;
+      padding: 20px 0px;
+      gap: 15px;
+    }
+    #main2 {
+      flex-direction: column;
+    }
+    #heading {
+      width: 100%;
+    }
+    #fooddiv {
+      width: 100%;
+    }
+    #gallery {
+      width: 80%;
+      height: 40%;
+    }
+    #btn2 {
+      width: 70%;
+      padding: 15px;
+    }
+    #btn2head {
+      line-height: 10px;
+      font-size: 4vw;
+      letter-spacing: 3px;
+    }
+    #navlinks{
+      display: none;
+    }
+    #drophead:hover #dropdown {
+    display: flex;
+    font-size: 10px;
+  }
+  navbar{
+    justify-content: flex-end;
+    padding: 10px;
+    
+  }
+#mainhead{
+margin: 0;
+font-size: 10vw;
+}
+#maintext{
+line-height: 3vh;
+}
+  }
